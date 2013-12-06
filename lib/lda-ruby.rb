@@ -105,7 +105,7 @@ module Lda
 
       topics = top_word_indices(words_per_topic)
       topics.each_pair do |topic_num, words|
-        output[topic_num] = words.map { |w| @vocab[w] }
+        output[topic_num] = words.compact.map { |w| @vocab[w] }
       end
 
       output

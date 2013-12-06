@@ -4,3 +4,4 @@
 pkg
 test/blei
 lda-ruby-*.gem
+/.idea/*
